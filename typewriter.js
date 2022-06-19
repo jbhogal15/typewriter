@@ -1,12 +1,9 @@
-const sentence = "hello there from lighthouse labs";
-let arr = sentence.split("");
+const sentence = "Lighthouse Labs!\n";
 
 let t = 1000;
-for (let i = 0; i < arr.length; i++) {
-  setTimeout(() => process.stdout.write(arr[i]), t);
+for (const letter of sentence) {
+  setTimeout(() => process.stdout.write(letter), t);
   //each time a letter gets printed, the time will increment by 100ms
-  t += 100;
+  t += 200;
 }
-
-setTimeout(() => process.stdout.write("\n"), t);
 
